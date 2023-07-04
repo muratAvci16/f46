@@ -16,7 +16,45 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: CostumAppbar(),
-      body: Center(child: Text("Anasayfammmm", style: context.h2)),
+      body: Center(child: Text("Anasayfa", style: context.h2)),
+      bottomNavigationBar: BottomNavigationBar(
+        items: const [
+          BottomNavigationBarItem(
+            icon: Icon((Icons.home),color: FigmaColors.anarenk,
+              size: 35,
+            ),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon((Icons.map),color: FigmaColors.anarenk,
+            size: 35,
+            ),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon((Icons.search),color: FigmaColors.anarenk,
+            size: 35,
+            ),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon((Icons.favorite_border),color: FigmaColors.anarenk,
+            size: 35,
+            ),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon((Icons.settings),color: FigmaColors.anarenk,
+            size: 35,
+            ),
+            label: '',
+          ),
+        ],
+        backgroundColor: FigmaColors.beyaz,
+        showUnselectedLabels: false,
+        showSelectedLabels: false,
+
+      ),
     );
   }
 }
